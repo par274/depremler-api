@@ -11,7 +11,11 @@ Son depremleri anlık olarak çeker ve tablo, Json veya Xml formatlarında okuna
 - Composer
 - PHP 7.4+
 
-Dosyaları indirin.
+Dosyaları indirin veya Git ile kurulum yapın.
+
+```
+git clone https://github.com/par274/depremler-api
+```
 
 ```
 cd src
