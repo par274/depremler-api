@@ -1,0 +1,27 @@
+.app-introduction, .app-table, .app-end {
+    padding: 0 15px;
+}
+
+.bg-dark hr {
+    border-top: 1px solid rgb(69, 77, 85);
+}
+
+.bg-dark .pagination .page-link {
+    color: #fff;
+    background-color: #343a40;
+    border: 1px solid #454d55;
+}
+
+.bg-dark .pagination .page-link:hover {
+    background-color: #31373d;
+}
+
+.bg-dark .table-dark.table-bordered {
+    border: 1px solid #454d55;
+    border-right: none;
+    border-top: none
+}
+
+.bg-dark .app-table .custom-select {
+    color: #000;
+}
