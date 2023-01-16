@@ -38,6 +38,7 @@
                 <th scope="col">Büyüklük</th>
                 <th scope="col">Bölge/Eyalet</th>
                 <th scope="col">Şehir</th>
+                <th scope="col">Konum</th>
                 <th scole="col">Doğruluk</th>
             </tr>
         </thead>
@@ -67,6 +68,9 @@
                     <td><?php echo $item['ml']; ?></td>
                     <td><?php echo $item['location']['state']; ?></td>
                     <td><?php echo $item['location']['city']; ?></td>
+                    <td>
+                        <a target="_blank" href="<?php echo $item['geo']['google_maps']; ?>">Google Haritalar</a>
+                    </td>
                     <td><?php echo $item['accuracy']; ?></td>
                     </tr>
                 <?php endforeach; ?>

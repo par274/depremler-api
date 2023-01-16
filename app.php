@@ -166,6 +166,8 @@ class app
                 $row[8] = '';
             }
 
+            $ll = \sprintf('%s,%s', \trim($row[1]), \trim($row[2]));
+
             $data[] = [
                 'date' => [
                     'humanreadable' => (new \PlatformRunDirect\DateTime())->getFullDateTime($dateTime),
@@ -173,9 +175,10 @@ class app
                     'time' => date('H:i', $dateTime)
                 ],
                 'geo' => [
-                    'full' => \sprintf('%s,%s', $row[1], $row[2]),
+                    'full' => $ll,
                     'latitude' => \trim($row[1]),
-                    'longitude' => \trim($row[2])
+                    'longitude' => \trim($row[2]),
+                    'google_maps' => "https://www.google.com/maps?q={$ll}&ll={$ll}&z=12"
                 ],
                 'depth' => \trim($row[3]),
                 'ml' => $row[5],
