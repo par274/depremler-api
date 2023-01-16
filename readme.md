@@ -43,6 +43,7 @@ foreach ($data['data'] as $item)
     echo $item['geo']['full']; // Enlem, boylam.
     echo $item['geo']['latitude']; //Enlem.
     echo $item['geo']['longitude']; //Boylam.
+    echo $item['geo']['google_maps'] //Google Haritalar linki.
 
     echo $item['depth']; //Derinlik (km).
 
@@ -71,21 +72,22 @@ Bunun için direkt Index çalıştırabilirsiniz veya [src/View/view.table.php](
   "data": [
     {
       "date": {
-        "humanreadable": "11 Ocak Çarşamba 2023, 03:58",
-        "date": "11-01-2023",
-        "time": "03:58"
+        "humanreadable": "16 Ocak Pazartesi 2023, 04:16",
+        "date": "16-01-2023",
+        "time": "04:16"
       },
       "geo": {
-        "full": "39.3653, 26.2570",
-        "latitude": "39.3653",
-        "longitude": "26.2570"
+        "full": "38.3487,27.2238",
+        "latitude": "38.3487",
+        "longitude": "27.2238",
+        "google_maps": "https://www.google.com/maps?q=38.3487,27.2238&ll=38.3487,27.2238&z=12"
       },
-      "depth": "4.7",
-      "ml": "2.7",
+      "depth": "6.7",
+      "ml": "2.2",
       "location": {
-        "full": "Midilli Adasi (ege Denizi)",
-        "city": "Midilli Adasi",
-        "state": "Ege Denizi"
+        "full": "Gokdere-bornova (izmir)",
+        "city": "Gokdere-bornova",
+        "state": "Izmir"
       },
       "accuracy": "İlksel"
     }
@@ -100,27 +102,28 @@ Bunun için direkt Index çalıştırabilirsiniz veya [src/View/view.table.php](
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <response>
-  <status>ok</status>
-  <data>
-    <date>
-      <humanreadable>11 Ocak Çarşamba 2023, 03:58</humanreadable>
-      <date>11-01-2023</date>
-      <time>03:58</time>
-    </date>
-    <geo>
-      <full>39.3653, 26.2570</full>
-      <latitude>39.3653</latitude>
-      <longitude>26.2570</longitude>
-    </geo>
-    <depth>4.7</depth>
-    <ml>2.7</ml>
-    <location>
-      <full>Midilli Adasi (ege Denizi)</full>
-      <city>Midilli Adasi</city>
-      <state>Ege Denizi</state>
-    </location>
-    <accuracy>İlksel</accuracy>
-  </data>
+	<status>ok</status>
+	<data>
+		<date>
+			<humanreadable>16 Ocak Pazartesi 2023, 04:16</humanreadable>
+			<date>16-01-2023</date>
+			<time>04:16</time>
+		</date>
+		<geo>
+			<full>38.3487,27.2238</full>
+			<latitude>38.3487</latitude>
+			<longitude>27.2238</longitude>
+			<google_maps>https://www.google.com/maps?q=38.3487,27.2238&amp;ll=38.3487,27.2238&amp;z=12</google_maps>
+		</geo>
+		<depth>6.7</depth>
+		<ml>2.2</ml>
+		<location>
+			<full>Gokdere-bornova (izmir)</full>
+			<city>Gokdere-bornova</city>
+			<state>Izmir</state>
+		</location>
+		<accuracy>İlksel</accuracy>
+	</data>
 </response>
 ```
 
