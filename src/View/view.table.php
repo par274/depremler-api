@@ -35,7 +35,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Tarih</th>
                 <th scope="col">Derinlik(km)</th>
-                <th scope="col">Şiddet</th>
+                <th scope="col">Büyüklük</th>
                 <th scope="col">Bölge/Eyalet</th>
                 <th scope="col">Şehir</th>
                 <th scole="col">Doğruluk</th>
