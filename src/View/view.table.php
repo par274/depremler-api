@@ -69,7 +69,7 @@
                     <td><?php echo $item['location']['state']; ?></td>
                     <td><?php echo $item['location']['city']; ?></td>
                     <td>
-                        <a target="_blank" href="<?php echo $item['geo']['google_maps']; ?>">Google Haritalar</a>
+                        <a target="_blank" href="<?php echo \htmlspecialchars_decode($item['geo']['google_maps']); ?>">Google Haritalar</a>
                     </td>
                     <td><?php echo $item['accuracy']; ?></td>
                     </tr>

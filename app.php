@@ -178,7 +178,7 @@ class app
                     'full' => $ll,
                     'latitude' => \trim($row[1]),
                     'longitude' => \trim($row[2]),
-                    'google_maps' => "https://www.google.com/maps?q={$ll}&ll={$ll}&z=12"
+                    'google_maps' => \htmlspecialchars("https://www.google.com/maps?q={$ll}&ll={$ll}&z=12")
                 ],
                 'depth' => \trim($row[3]),
                 'ml' => $row[5],
