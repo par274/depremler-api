@@ -161,6 +161,11 @@ class app
                 $revisionDateTime = date('d-m-Y H:i', $revisionDateTime);
             }
 
+            if (!isset($row[8]))
+            {
+                $row[8] = '';
+            }
+
             $data[] = [
                 'date' => [
                     'humanreadable' => (new \PlatformRunDirect\DateTime())->getFullDateTime($dateTime),
@@ -189,7 +194,7 @@ class app
                         )
                     )
                 ],
-                'accuracy' => (isset($row[9])) ? \trim("{$row[8]} {$revisionDateTime}") : \trim($row[8])
+                'accuracy' => (isset($row[9])) ? \trim("{$row[8]} ({$revisionDateTime})") : \trim($row[8])
             ];
         }
 
