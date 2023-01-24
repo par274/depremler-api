@@ -43,7 +43,8 @@ class app
 
         $this->serializer = new Serializer($normalizers, $encoders);
 
-        $this->template = new Templater();
+        $this->template = new \Templater\Templater();
+        $this->template->setPath(APPLICATION_SELF . '/View');
         $this->templaterController();
     }
 

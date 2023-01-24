@@ -12,9 +12,10 @@
         "symfony/http-foundation": "^5.4",
         "symfony/uid": "^5.4",
         "symfony/property-access": "^5.4",
-        "guzzlehttp/guzzle": "7.0",
+        "guzzlehttp/guzzle": "^6.0",
         "symfony/dom-crawler": "^5.4",
         "symfony/css-selector": "^5.4",
-        "nesbot/carbon": "^2.65"
+        "nesbot/carbon": "^2.65",
+        "par274/templater": "^1.0"
     }
 }
